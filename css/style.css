@@ -1,3 +1,66 @@
 .hidden {
     display: none;
 }
+
+body {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#weather {
+    font-size: 30px;
+    text-align: end;
+}
+
+#clock {
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+#greeting {
+    font-size: 70px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+#todo-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.todo {}
+
+#quote {
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
