@@ -20,17 +20,18 @@ function deleteToDo(event) {
 function paintToDo(newToDo) {
     const li = document.createElement("li");
     li.id = newToDo.id; // 개별적으로 삭제하기 위해 필요한 식별 아이디
+
     const span = document.createElement("span");
     span.classList.add("todo");
-    span.innerText = newToDo.text;
+    span.innerText = " " + newToDo.text;
     const button = document.createElement("button");
-    button.classList.add("todo");
-    button.innerText = "X";
+    button.classList.add("todo-button");
+    button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(button);
     li.appendChild(span); // li 자식으로 내부에 span 생성
-    toDoList.appendChild(li);
+    li.appendChild(button);
 
+    toDoList.appendChild(li);
 }
 
 function handleToDoSubmit(event) {
