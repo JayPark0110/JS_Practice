@@ -47,6 +47,10 @@ input {
     font-size: 4vh;
 }
 
+#login-form input:focus::placeholder {
+    color: transparent;
+}
+
 #weather {
     position: fixed;
     top: 2vh;
