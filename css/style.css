@@ -95,7 +95,7 @@ input {
 #todo-form input::placeholder {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 #todo-form input:focus::placeholder {
